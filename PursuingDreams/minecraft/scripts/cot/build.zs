@@ -27,7 +27,7 @@ import mods.contenttweaker.MutableItemStack;
 import mods.contenttweaker.Hand;
 import crafttweaker.data.IData;
 
-val tab = mods.contenttweaker.VanillaFactory.createCreativeTab("OD_item", <item:minecraft:stick>);
+val tab = mods.contenttweaker.VanillaFactory.createCreativeTab("PD_item", <item:minecraft:stick>);
 tab.register();
 
 //定义函数
@@ -36,7 +36,7 @@ function ItemBuilder(name as string,maxn as int,glow as bool){
     var itemt = VanillaFactory.createItem(name);
     itemt.maxStackSize = maxn;
     itemt.glowing = glow;
-    itemt.creativeTab = <creativetab:OD_item>;
+    itemt.creativeTab = <creativetab:PD_item>;
     itemt.register();
 }
 
@@ -59,7 +59,7 @@ function FluidBuilder(name as string,color as string,temperature as int,viscosit
     fluidt.register();
 }
 
-val tabblock = mods.contenttweaker.VanillaFactory.createCreativeTab("OD_block", <item:minecraft:bedrock>);
+val tabblock = mods.contenttweaker.VanillaFactory.createCreativeTab("PD_block", <item:minecraft:bedrock>);
 tabblock.register();
 
 function BlockBuilder(name as string,blockMaterial as BlockMaterial,hardness as float,resistance as float,blockSoundType as SoundType,lightValue as int,gravity as bool,toolClass as string,toolLevel as int,beaconBase as bool){
@@ -73,7 +73,7 @@ function BlockBuilder(name as string,blockMaterial as BlockMaterial,hardness as 
     blockt.setToolClass(toolClass);
     blockt.setToolLevel(toolLevel);
     blockt.beaconBase = beaconBase;
-    blockt.creativeTab = <creativetab:OD_block>;
+    blockt.creativeTab = <creativetab:PD_block>;
     blockt.register();
 }
 //自定义函数用法:
