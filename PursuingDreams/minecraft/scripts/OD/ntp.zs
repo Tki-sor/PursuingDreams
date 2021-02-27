@@ -1,4 +1,4 @@
-#priority 2699
+#priority 3999
 
 <ore:logWood>.add(<aether:skyroot_log>);
 <ore:logWood>.add(<aether:light_skyroot_log>);
